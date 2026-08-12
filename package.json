@@ -1,0 +1,16 @@
+{
+  "name": "clarity-architecture",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Architecture, decisions and selected tests from Clarity — a note-taking system built around an explicit privacy boundary. The full implementation is private; this is the evidence.",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.9"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
