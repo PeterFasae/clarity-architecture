@@ -1,12 +1,18 @@
 # Clarity — architecture, decisions and evidence
 
-The full implementation is private while it's unfinished. This is a companion repository
+> **November 2026:** the full Clarity implementation is now public at
+> [github.com/PeterFasae/clarity](https://github.com/PeterFasae/clarity), and that is the
+> repository to read. This companion is a snapshot from August 2026, made while the main
+> repository was private, and its figures are from then. The full suite had 121 tests at the
+> time; 270 passed on 4 November 2026. Clarity is still not deployed.
+
+When this snapshot was made, the full implementation was private while it was unfinished. This was a companion repository
 of real material pulled from it, for anyone who wants more than the [case
 study](https://peterfasae.github.io/clarity.html) — actual code, the actual decisions log,
 and the actual test files behind the claims made there.
 
-Everything here is exactly as it exists in the private repository. Nothing has been
-rewritten, tidied up, or improved for this audience.
+Everything here was copied exactly as it existed in the then-private repository in August
+2026. Nothing was rewritten, tidied up, or improved for this audience.
 
 ## What Clarity is
 
@@ -17,7 +23,8 @@ the code — `services/api/tests/ai.test.js` below is that test, exactly as it r
 the real API.
 
 Serverless on AWS — Lambda, API Gateway, DynamoDB, Cognito — with a React front end.
-121 tests across the full implementation. **Not deployed.**
+121 tests across the full implementation when this snapshot was taken (270 on 4 November
+2026). **Not deployed.**
 
 ## What's actually runnable here
 
@@ -55,7 +62,7 @@ proven on the spot rather than taken on trust.
   reach the model and asserts the count is zero; the next turns the flag on and asserts the
   count rises, because a zero that could never be anything else proves nothing.
 
-  These two files depend on the rest of the private implementation (the Lambda handlers,
+  These two files depend on the rest of the implementation, now public in the main repository (the Lambda handlers,
   the DynamoDB Local test rig, a `helpers.js` not included here) to actually execute, so
   `npm test` in this repository does not run them — they're included to be read, not to
   pass or fail here. What you can verify directly is that the test names describe real
@@ -64,8 +71,8 @@ proven on the spot rather than taken on trust.
 ## What isn't here
 
 Product and business planning — market positioning, the accessibility-conformance
-research the build is measured against, unshipped feature copy — stays in the private
-repository. This companion is the engineering evidence, not the whole project.
+research the build is measured against, unshipped feature copy — lives in the main
+repository, not here. This companion is the engineering evidence, not the whole project.
 
 ## Status
 
